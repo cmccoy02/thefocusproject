@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study Efficiency Survey</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Study Efficiency Survey</h1>
+        <form action="submit_survey.php" method="POST" class="survey-form">
+            <!-- Question 1 -->
+            <div class="form-group">
+                <label for="study_hours">How many hours do you study per day?</label>
+                <input type="number" id="study_hours" name="study_hours" required min="0">
+            </div>
+            <!-- Question 2 -->
+            <div class="form-group">
+                <label for="distraction_level">How often do you feel distracted while studying?</label>
+                <select id="distraction_level" name="distraction_level" required>
+                    <option value="">Select an option</option>
+                    <option value="Always">Always</option>
+                    <option value="Often">Often</option>
+                    <option value="Sometimes">Sometimes</option>
+                    <option value="Rarely">Rarely</option>
+                    <option value="Never">Never</option>
+                </select>
+            </div>
+            <!-- Add more questions as needed -->
+            <button type="submit" class="btn">Submit Survey</button>
+        </form>
+    </div>
+</body>
+</html>
